@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colori Generali dell'App (Tema Scuro) -->
+    <color name="primary">#6366F1</color> <!-- Indaco leggermente più brillante per risaltare sul nero -->
+    <color name="primary_dark">#4338CA</color>
+    <color name="accent">#A5B4FC</color>
+
+    <!-- Sfondi Scuri -->
+    <color name="background_app">#111827</color> <!-- Grigio molto scuro per lo sfondo principale -->
+    <color name="background_surface">#1F2937</color> <!-- Grigio un po' più chiaro per le barre laterali e di input -->
+
+    <!-- Testi (Tema Scuro) -->
+    <color name="text_primary">#F9FAFB</color> <!-- Quasi bianco -->
+    <color name="text_secondary">#9CA3AF</color> <!-- Grigio chiaro -->
+
+    <!-- Colori specifici per la Chat (Tema Scuro) -->
+    <color name="chat_bubble_user">#4F46E5</color> <!-- Manteniamo l'indaco per l'utente -->
+    <color name="chat_text_user">#FFFFFF</color>
+
+    <color name="chat_bubble_ai">#374151</color> <!-- Grigio antracite per le bolle dell'AI -->
+    <color name="chat_text_ai">#F3F4F6</color>
+
+    <!-- Colori per bordi e divisori (Tema Scuro) -->
+    <color name="divider">#374151</color>
+</resources>

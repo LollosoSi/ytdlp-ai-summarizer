@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colori Generali dell'App -->
+    <color name="primary">#4F46E5</color>
+    <color name="primary_dark">#3730A3</color>
+    <color name="accent">#818CF8</color>
+
+    <color name="background_app">#F3F4F6</color>
+    <color name="background_surface">#FFFFFF</color>
+
+    <!-- Testi -->
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6B7280</color>
+
+    <!-- Colori specifici per la Chat -->
+    <color name="chat_bubble_user">#4F46E5</color>
+    <color name="chat_text_user">#FFFFFF</color>
+
+    <color name="chat_bubble_ai">#FFFFFF</color>
+    <color name="chat_text_ai">#1F2937</color>
+
+    <!-- Colori per bordi e divisori -->
+    <color name="divider">#E5E7EB</color>
+</resources>

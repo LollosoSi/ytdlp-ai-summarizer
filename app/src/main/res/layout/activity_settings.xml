@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Indirizzo Server Ollama (es. http://192.168.1.10:11434)" android:textStyle="bold" />
+        <EditText android:id="@+id/et_server_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textUri" />
+
+        <Button android:id="@+id/btn_test_connection" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Test Connessione" android:layout_marginBottom="24dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Modello per Singoli Video (Fase 1)" android:textStyle="bold" />
+        <EditText android:id="@+id/et_model_single" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="es. llama3.1" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Modello Macro e Sintesi (Fase 2-3)" android:textStyle="bold" />
+        <EditText android:id="@+id/et_model_macro" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="es. qwen2.5:14b" android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Context Window (Token)" android:textStyle="bold" />
+        <EditText android:id="@+id/et_context_window" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:hint="es. 16384" android:layout_marginBottom="16dp"/>
+
+        <!-- Aggiungi sotto i campi del Server e dei Modelli -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prompt: Video Singolo"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edit_prompt_single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prompt: Scaglioni (Fase 2)"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edit_prompt_macro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prompt: Riassuntone (Fase 3)"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/edit_prompt_final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginBottom="24dp"/>
+
+        <Button android:id="@+id/btn_save_settings" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Salva Impostazioni" />
+
+    </LinearLayout>
+</ScrollView>
